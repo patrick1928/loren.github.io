@@ -1,0 +1,119 @@
+@charset="utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+ 
+  body {
+    background: #dddddd;
+    display:flex;
+    	flex-direction:column;
+    	justify-content:center;
+    	align-items: center;
+    }
+    #check{
+      display: none;
+      position: absolute;
+      left: 90%;
+      
+    }
+    #sidebar{
+      position: fixed;
+      left: 90%;
+      font-size: 30px;
+      color: white;
+      
+    }
+    .sidebar{
+      position: fixed;
+      left: -1000px;
+      top: -10px;
+      background: #dddddd;
+      width: 40vh;
+      height: 100vh;
+      box-shadow: 1px 1px 4px black;
+      transition: all .4s ease;
+      text-decoration: collum;
+      z-index: 100;
+      
+    }
+    .sidebar ul{
+      padding: 12px;
+      margin: 10px;
+      top: 40px;
+      
+    }
+    .sidebar li{
+      font-size: 15pt;
+      border-bottom: 1px solid #000000ab;
+      padding: 10px;
+      list-style: none;
+      text-align: center;
+     
+    }
+    .sidebar li a{
+      color: #000000;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+    }
+    #conteiner{
+    font-family: 'Redressed', cursive;	
+    }
+    a i{
+    padding: 10px;
+ 
+    }
+    #check:checked ~ .sidebar{
+    left: 0px;
+    }
+   .cabecalho{
+      width: 100%;
+     height: 60px;
+     background: linear-gradient(to right, #606060, #000000);
+    position: relative;
+    
+    }
+   img#logo{
+   position: relative;
+   top:-10px;
+   margin: 0 auto;
+   	width: 180px;
+    }
+    span{
+    	font-size: 10pt;
+    	font-family: 'Sans-Serif', Arial;
+    	margin-bottom: 2rem;
+    }
+  button#sign-in{
+  	margin-top:1rem;
+  	padding: 2px 5px 2px 5px;
+  	font-size: 15pt;
+  	background: #606060;
+  	color: #ffffff;
+  	width: 5rem;
+  }
+  input{
+  	border-bottom: 2px solid #606060;
+  	position:relative;
+  	display:block;
+  	width:200px;
+  	margin: 5px 0 5px 0;
+  	font-size: 15pt;
+  	outline: none;
+  	transition: .5s;
+  	background:#dddddd;
+  }
+  input:focus{
+  	border-bottom: 2px solid #ffffff;
+  }
+  footer#rodape{
+  	position:relative;
+  	font-size: 10pt;
+  	margin-top: 15rem;
+  }
