@@ -1,10 +1,9 @@
-var lognin = document.querySelector('button#sign-in');
+var lognin = document.getElementById('sign-in');
+let username = document.getElementById('email');
+let password = document.getElementById('password');
 lognin.addEventListener('click', function(){
-	
-var username = document.getElementById('email').value;
-var password = document.getElementById('password').value;
-if(username == user1[0] && password == user1[1]){
-	window.alert(`login success`);
+if(username.value == user1[0] && password.value == user1[1]){
+	window.alert("login success");
 }
 else{
 	alert("user is not correct");
